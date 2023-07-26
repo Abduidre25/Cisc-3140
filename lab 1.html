@@ -1,0 +1,50 @@
+<img aria-hidden="false" class="jss238 undefined" src="https://www.pizzahut.com/assets/w/images/Logo_PH_Retro.png" alt="Logo Image" data-testid="ph-logo-mobile" loading="lazy">
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizza Hut</title>
+</head>
+<body>
+  <form action="/submit" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+<br>
+    
+    <input type="radio" id="male" name="gender" value="male" >
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female" >
+    <label for="female">Female</label><br>
+   
+    <label for="other">Other</label><br>
+
+    <label for="dropdown">Dropdown:</label><br>
+    <select id="dropdown" name="dropdown" >
+      <option value="">-- Select an option --</option>
+      <option value="option">Cheese </option>
+      <option value="option">Vagetable </option>
+      <option value="option">papperoni</option>
+    </select><br>
+
+
+    <label for="Extra Topping">Extra Topping:</label><br>
+    <input type="checkbox" id="Extra papper" name="preference[]" value="papper">
+    <label for="Extra papper">Extra papper</label><br>
+    <input type="checkbox" id="Extra Vagetable" name="preference[]" value="Vagetable">
+    <label for="cheese">Extra cheese</label><br>
+    <input type="checkbox" id="Extra cheese" name="preference[]"  value="cheese">
+    
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
+
+
+
