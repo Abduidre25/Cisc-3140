@@ -1,0 +1,12 @@
+ function click() {
+       var now = new Date().get time();
+			var target = new Date("jan 01 2023 18:00").getTime();
+			var diff = target-now;
+			var dys = math.floor(diff/(1000*60*60*24));	
+			var hour = math.floor(diff % (1000*60*60*24))/(1000*60*60));
+			var min = math.floor(diff % (1000*60*60))/(1000*60*));
+                  var sec = math.floor(diff % (1000*60))/(1000));
+			document.getElemmentById('t1').innerHTML = new Date();
+			document.getElemmentById('t1').style.color = "#" + col;
+			document.getElementById("dt").innerHtml = days+"days"+ hour+ "hours"+ min+" minutes"+sec+"seconds";
+			setTimeout("clck()",1000);
