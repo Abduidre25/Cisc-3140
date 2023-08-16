@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Menu</title>
+    <script>
+        function calculateTotal() {
+            var pizzaSelection = document.getElementById("pizzaSelection").value;
+            var pizzaPrices = {
+                "cheese": 8.99,
+                "pepperoni": 10.99,
+                "vegetable": 14.00,
+                "Pan Pizza": 18.00,
+                "Hand Toast": 20.00
+            };
+            
+            var selectedPrice = pizzaPrices[pizzaSelection];
+            if (selectedPrice) {
+                document.getElementById("totalAmount").textContent = "Total Amount: $" + selectedPrice.toFixed(2);
+            } else {
+                document.getElementById("totalAmount").textContent = "Please select a pizza";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Pizza Menu</h1>
+    
+    <label for="pizzaSelection">Select a pizza:</label>
+    <select id="pizzaSelection">
+        <option value="vegetable">Vegetable Pizza</option> 
+        <option value="cheese">Cheese Pizza</option>
+        <option value="pepperoni">Pepperoni Pizza</option>
+        <option value="Pan Pizza">Pan Pizza</option>
+        <option value="Hand Toast">Hand Toast</option>
+    </select><br><br>
+    
+    <button type="button" onclick="calculateTotal()">Calculate Total</button>
+    
+    <p id="totalAmount"></p>
+</body>
+</html>
+
